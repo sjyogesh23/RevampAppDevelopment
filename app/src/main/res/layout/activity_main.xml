@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#F0F0F0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp"
+                android:paddingBottom="160dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/title"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello,"
+                            android:textColor="#FFB800"
+                            android:fontFamily="@font/kantumruyprobold"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yogesh SJ"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kantumruyprobold"
+                            android:textSize="30dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/searchbar">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/search"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="3dp"
+                            android:hint="What you want to learn?"
+                            android:fontFamily="@font/kantumruyregular"
+                            android:textSize="15dp"
+                            android:background="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Enrolled Courses-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enrolled Courses"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="320dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/encr1"
+                                android:layout_marginRight="20dp"
+                                android:paddingVertical="20dp"
+                                android:paddingHorizontal="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="App Development - Java"
+                                        android:fontFamily="@font/kantumruyprobold"
+                                        android:textColor="@color/white"
+                                        android:textSize="15dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="App Development"
+                                        android:fontFamily="@font/kantumruymedium"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="bottom">
+
+                                    <ProgressBar
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="75"
+                                        android:progressTint="#10D777"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="75% Completed"
+                                        android:fontFamily="@font/kantumruymedium"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="320dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/encr2"
+                                android:paddingVertical="20dp"
+                                android:paddingHorizontal="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Spring Boot"
+                                        android:fontFamily="@font/kantumruyprobold"
+                                        android:textColor="@color/white"
+                                        android:textSize="15dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Back-End Development"
+                                        android:fontFamily="@font/kantumruymedium"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"/>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="bottom">
+
+                                    <ProgressBar
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="50"
+                                        android:progressTint="#10D777"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="50% Completed"
+                                        android:fontFamily="@font/kantumruymedium"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--Categories-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Categories"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="All Categories"
+                                android:textSize="12dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/ctgselect"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="App Development"
+                                android:textSize="12dp"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Web Development"
+                                android:textSize="12dp"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Programming Language"
+                                android:textSize="12dp"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Artificial Intelligence"
+                                android:textSize="12dp"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cyber Security"
+                                android:textSize="12dp"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Machine Learning"
+                                android:textSize="12dp"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:fontFamily="@font/kantumruymedium"/>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--Recommended for you-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended for you"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/mern"/>
+                            <include layout="@layout/kotlin"/>
+                            <include layout="@layout/flutter"/>
+                            <include layout="@layout/firebase"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--Web Development-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web Development"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/html"/>
+                            <include layout="@layout/mern"/>
+                            <include layout="@layout/php"/>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/adver"/>
+
+                <!--App Development-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App Development"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/javaapp"/>
+                            <include layout="@layout/kotlin"/>
+                            <include layout="@layout/flutter"/>
+                            <include layout="@layout/springboot"/>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--Programming Language-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Programming Language"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/cpp"/>
+                            <include layout="@layout/python"/>
+                            <include layout="@layout/java"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--Back-End Development-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back-End Development"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/kantumruymedium"
+                        android:letterSpacing=".05"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/firebase"/>
+                            <include layout="@layout/mysql"/>
+                            <include layout="@layout/springboot"/>
+                            <include layout="@layout/mongo"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/fade"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/profile"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:paddingHorizontal="20dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/home"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Home"
+                    android:textSize="12dp"
+                    android:textColor="#FF9F00"
+                    android:fontFamily="@font/kantumruyregular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/mylear"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="My Learning"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kantumruyregular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/like"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Wish List"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kantumruyregular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/conta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Profile"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kantumruyregular"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
